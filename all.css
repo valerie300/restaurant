@@ -1,0 +1,880 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* css reset end */
+/* pure css start */
+
+/* pure css end */
+/* common start */
+body {
+  color: #3d1101;
+  font-family: Microsoft JhengHei;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .wrap {
+    max-width: 768px;
+  }
+}
+@media (max-width: 375px) {
+  .wrap {
+    max-width: 375px;
+  }
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-end {
+  justify-content: end;
+}
+.align-items-center {
+  align-items: center;
+}
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+.text-white {
+  color: #fff;
+}
+.fw-bold {
+  font-weight: 600;
+}
+.text-size-14 {
+  font-size: 14px;
+}
+.text-size-18 {
+  font-size: 18px;
+}
+.text-size-20 {
+  font-size: 20px;
+}
+.text-size-24 {
+  font-size: 24px;
+}
+.text-size-36 {
+  font-size: 36px;
+}
+.text-size-48 {
+  font-size: 48px;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.lh-base {
+  line-height: 1.5;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+@media (max-width: 375px) {
+  .flex-sm-column {
+    flex-direction: column;
+  }
+}
+/* common end */
+/* index start */
+/* header & banner start */
+.ham-icon {
+  display: none;
+  right: 22px;
+}
+.ham-nav {
+  padding: 18px 15px;
+}
+.ham-nav:hover {
+  background-color: rgb(240, 180, 90);
+}
+.dropdown-md-block {
+  display: none;
+}
+.hamburger-bg {
+  height: 420px;
+  width: 1024px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://i.imgur.com/hGP7GHw.png");
+}
+.hamburger-body {
+  height: 56px;
+  padding: 0 27px 0 48px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.banner-body {
+  height: 152px;
+  width: 460px;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.banner-body-position {
+  top: 50%;
+  left: 27.5%;
+  transform: translateY(-50%);
+}
+.eat-hamburger {
+  margin: 20px 0;
+}
+@media (max-width: 768px) {
+  .hamburger-bg {
+    width: 768px;
+  }
+  .hamburger-body {
+    padding: 0 30px 0 13px;
+  }
+  .banner-body-position {
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+  }
+}
+@media (max-width: 375px) {
+  .ham-icon {
+    display: block;
+    right: 22px;
+    color: #ffffff;
+  }
+  .dropdown-sm-none {
+    display: none;
+  }
+  .dropdown-md-block {
+    display: block;
+  }
+  .dropdown-md-block {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    max-height: 0px;
+    transition: all 0.8s;
+    overflow: hidden;
+    z-index: 120;
+  }
+  .dropdown-md-block.active {
+    max-height: 200px;
+  }
+  .dropdown-md-block li a {
+    text-align: center;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-top: 1px solid #ffffff;
+    padding: 16px 0;
+  }
+  .hamburger-bg {
+    width: 375px;
+    background-image: url("https://i.imgur.com/4Tk5HHJ.png");
+  }
+  .banner-body {
+    height: 194px;
+    width: 300px;
+  }
+  .banner-body-position {
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+  }
+}
+/* header & banner end */
+/* footer start */
+.footer-bg {
+  padding: 50px 43px;
+  background-color: rgb(240, 228, 223);
+}
+.footer-title {
+  margin-bottom: 16px;
+}
+.footer-text {
+  max-width: 299px;
+}
+.footer-contact {
+  margin-left: 21px;
+}
+.footer-google,
+.footer-twitter,
+.footer-fb {
+  width: 31px;
+  height: 31px;
+  border-radius: 5px;
+  margin-left: 11px;
+}
+@media (max-width: 768px) {
+  .footer-bg {
+    padding: 50px 11px;
+  }
+}
+@media (max-width: 375px) {
+  .footer-contact {
+    margin: 30px 0 0 0;
+  }
+  .footer-logo {
+    margin: 30px 0 0 auto;
+  }
+  .footer-google,
+  .footer-twitter,
+  .footer-fb {
+    margin-top: 22px;
+  }
+}
+/* footer end */
+/* 三項特點介紹 start*/
+.feature-bg {
+  padding: 50px 62px;
+  background-color: rgb(240, 228, 223);
+}
+.feature-title {
+  display: table;
+  max-width: 200px;
+  margin: 0 12px;
+}
+.line {
+  stroke: rgb(0, 0, 0);
+  stroke-width: 1;
+}
+.feature-img {
+  display: block;
+  margin: 30px auto 20px;
+  border-radius: 50%;
+}
+.feature-text {
+  max-width: 260px;
+  margin-top: 11px;
+}
+@media (max-width: 768px) {
+  .feature-bg {
+    padding: 50px 30px;
+  }
+  .feature-text {
+    max-width: 196px;
+  }
+}
+@media (max-width: 375px) {
+  svg {
+    display: none;
+  }
+  .feature-text {
+    max-width: 260px;
+    margin: 11px auto 0;
+  }
+}
+/* 三項特點介紹 end*/
+/* 今日主廚：帕金森、梅在帕 start */
+.chef-bg {
+  padding: 0 77px 0 42px;
+  background-color: #3d1101;
+}
+.chef-content {
+  margin-left: 25px;
+}
+.chef-text {
+  max-width: 410px;
+  margin-top: 16px;
+}
+@media (max-width: 768px) {
+  .chef-bg {
+    padding: 0 20px 0 10px;
+  }
+  .chef-body {
+    width: 373px;
+    height: 460px;
+  }
+  .chef-img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .chef-text {
+    max-width: 330px;
+  }
+}
+@media (max-width: 375px) {
+  .chef-bg {
+    padding: 0;
+    margin: 0;
+  }
+  .chef-body {
+    width: 373px;
+  }
+  .chef-content {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .chef-text {
+    max-width: 260px;
+    margin-bottom: 30px;
+  }
+}
+/* 今日主廚：帕金森、梅在帕 end */
+/* 聽聽別人的感想 start */
+.message-bg {
+  padding: 50px 42px;
+  background-color: rgb(240, 228, 223);
+}
+.message-heading {
+  margin-bottom: 32px;
+}
+.message-img {
+  border-radius: 50%;
+}
+.message {
+  margin-left: 13px;
+}
+.message-title {
+  margin: 25px 0 22px;
+}
+.message-text {
+  max-width: 220px;
+}
+@media (max-width: 768px) {
+  .message-bg {
+    padding: 50px 12px;
+  }
+  .message-text {
+    max-width: 155px;
+  }
+}
+@media (max-width: 375px) {
+  .message-text {
+    max-width: 220px;
+  }
+}
+/* 聽聽別人的感想 end */
+/*我們的位置不太夠坐 start */
+.booking-bg {
+  padding: 50px 42px;
+  background-color: #fafafa;
+}
+.booking-title {
+  margin-bottom: 38px;
+}
+.booking-form {
+  margin-left: 20px;
+}
+.booking-form-title {
+  display: block;
+  margin-bottom: 6px;
+}
+.booking-input {
+  display: inline-block;
+  width: 460px;
+  height: 32px;
+  line-height: 32px;
+  box-sizing: border-box;
+  margin-bottom: 17px;
+}
+.booking-vegetarian {
+  margin-bottom: 8px;
+}
+.booking-vegetarian-no {
+  margin-left: 36px;
+}
+.booking-cancel,
+.booking-send {
+  display: inline-block;
+  margin: 0 auto;
+  width: 70px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 4px;
+}
+.booking-cancel {
+  background-color: #00000054;
+}
+.booking-send {
+  margin-left: 11px;
+  background-color: #f56c23;
+}
+@media (max-width: 768px) {
+  .booking-bg {
+    padding: 50px 10px;
+  }
+  .booking-body {
+    width: 363px;
+    height: 386px;
+  }
+  .booking-img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .booking-input {
+    width: 363px;
+  }
+}
+@media (max-width: 375px) {
+  .booking-body {
+    width: 298px;
+    height: 386px;
+    margin: 0 auto 30px;
+  }
+  .booking-input {
+    width: 300px;
+  }
+}
+/*我們的位置不太夠坐 end */
+/* index end */
+/* cart start */
+/* 選單 start */
+.cart-bg {
+  padding: 48px 0 0 42px;
+  background-color: rgb(240, 228, 223);
+}
+.cart-leaf {
+  width: 32px;
+  height: 32px;
+}
+.cart-order {
+  width: 220px;
+}
+.cart-order-cellphone {
+  display: none;
+}
+.cart-sort {
+  margin-top: 16px;
+}
+.cart-sort-food {
+  display: block;
+  padding: 10px 0 10px 5px;
+  color: #3d1101;
+  border-bottom: 1px solid #3d1101;
+}
+.cart-sort-food:hover {
+  color: #fff;
+  background-color: #3d1101;
+}
+@media (max-width: 375px) {
+  .cart-bg {
+    padding: 0;
+  }
+  .cart-order {
+    display: none;
+  }
+  .cart-order-cellphone {
+    display: block;
+    margin-top: 52px;
+  }
+}
+/* 選單 end */
+/* 搜尋 start */
+.cart-list {
+  margin-left: 20px;
+}
+.cart-input {
+  width: 460px;
+  height: 32px;
+  line-height: 32px;
+  border-color: #3d1101;
+  background-color: rgb(240, 228, 223);
+}
+.cart-search {
+  padding: 7px;
+  color: #fff;
+  background-color: #3d1101;
+}
+.cart-checkout {
+  margin-left: 112px;
+}
+.cart-checkout-line {
+  margin: 0 12px;
+}
+.cart-checkout-num {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ff5e45;
+  left: 90%;
+  top: -3%;
+}
+@media (max-width: 768px) {
+  .cart-input {
+    width: 360px;
+  }
+  .cart-checkout {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .cart-list {
+    margin: 0 auto;
+  }
+  .cart-input {
+    width: 300px;
+  }
+  .cart-checkout {
+    margin: 15px 0 0 auto;
+  }
+  .cart-sm-input {
+    margin-top: 23px;
+  }
+}
+/* 搜尋 end */
+/* 菜單 start */
+.cart-items {
+  margin-top: 26px;
+}
+.cart-hotsale {
+  top: -15px;
+  right: -8px;
+  overflow: hidden;
+  width: 72px;
+  height: 92px;
+}
+.cart-ribbon {
+  background-color: #00cc99;
+  top: 45px;
+  right: -60px;
+  transform: rotate(40deg);
+  padding: 7px 15px;
+  width: 119px;
+  z-index: 1;
+  font-size: 15px;
+}
+.cart-hotsale::before {
+  top: 0;
+  left: 10px;
+}
+.cart-hotsale::after {
+  bottom: 0;
+  right: 0;
+}
+.cart-hotsale::before,
+.cart-hotsale::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 4px solid #008866;
+}
+.cart-like {
+  top: 0px;
+  left: 0;
+  padding: 10px;
+  z-index: 1;
+}
+.cart-shopping-items {
+  width: 220px;
+  height: 280px;
+  box-shadow: 5px 5px 10px gray;
+  margin: 30px 20px 30px 0px;
+}
+.cart-shopping-items:hover {
+  cursor: pointer;
+}
+.cart-img {
+  overflow: hidden;
+  display: block;
+  transform: scale(1, 1);
+  transition: all 1s ease-out;
+  width: 220px;
+  height: 88px;
+}
+.cart-img img:hover {
+  position: absolute;
+  transform: scale(1.2);
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+.cart-body {
+  padding: 10px;
+  line-height: 1.5em;
+}
+.cart-body h2 {
+  color: #3d1101;
+  font-weight: bold;
+}
+.cart-body h3 {
+  color: #3d1101;
+  font-weight: bold;
+}
+.cart-body h3::after {
+  content: "";
+  display: block;
+  border: 0.5px solid #3d1101;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5px;
+}
+.cart-price {
+  color: #3d1101;
+  font-weight: bold;
+  display: block;
+  margin-top: 30px;
+  font-style: italic;
+}
+.cart-price::before {
+  content: "$";
+  color: #3d1101;
+}
+.cart-plus {
+  color: #ff5e45;
+  border: #ff5e45 2px solid;
+  margin-top: 20px;
+  padding: 3px;
+}
+.cart-plus:hover {
+  color: #fff;
+  background-color: #ff5e45;
+}
+@media (max-width: 768px) {
+  .cart-shopping-items {
+    margin: 30px 20px 0 0;
+  }
+}
+@media (max-width: 375px) {
+  .cart-shopping-items {
+    width: 300px;
+    margin: 10px auto 0;
+  }
+  .cart-img {
+    width: 300px;
+    height: 88px;
+  }
+}
+/* 菜單 end */
+/* cart end */
+/* login start */
+.login-body {
+  padding: 50px 0;
+  background-color: rgb(240, 228, 223);
+}
+.login-title {
+  margin-bottom: 5px;
+}
+.login-form {
+  width: 300px;
+  margin: 35px auto 0;
+  box-shadow: 2px 2px 6px rgb(185, 185, 185);
+}
+.login-heading {
+  padding: 15px 0;
+  border-top: 3px solid #f56c23;
+}
+.login-text {
+  display: block;
+  margin: 0 0 3px 15px;
+}
+.login-icon {
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.login-input {
+  width: 270px;
+  height: 32px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.login-forgetpw {
+  margin: 3px 0 30px 15px;
+  color: #f56c23;
+}
+.btn-register,
+.btn-login {
+  padding: 10px 47px;
+  margin-bottom: 15px;
+  display: inline-block;
+  border-radius: 3px;
+}
+.btn-register {
+  margin:0 20px 0 15px;
+  background: rgba(0, 0, 0, 0.35);
+}
+.btn-login {
+  background: #f56c23;
+}
+/* login end */
+/* register start */
+.login-form-register{
+  width: 620px;
+  margin: 35px auto 0;
+  box-shadow: 2px 2px 6px rgb(185, 185, 185);
+}
+.register-text{
+  width: 285px;
+  line-height: 1.2;
+}
+.register-text{
+  display: block;
+  margin: 0 0 3px 15px;
+}
+.register-text-password{
+  margin-top: 15px;
+}
+.register-input-password{
+  margin-top: 12px;
+}
+.register-icon{
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.register-input{
+  width: 270px;
+  height: 32px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.register-btn{
+  padding: 10px 47px;
+  display: inline-block;
+  margin: 0 0 15px 163px;
+  border-radius: 3px;
+  background: #f56c23;
+}
+@media (max-width: 375px) {
+  .login-form-register{
+    width: 300px;
+  }
+  .register-text{
+    margin: 0 0 15px 15px;
+  }
+}
+/* register end */

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./node_modules/purecss/build/base-min.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/purecss/build/buttons-min.css"
+    />
+    <link rel="stylesheet" href="all.css" />
+    <title>Restaurant Cart</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="hamburger-bg text-white position-relative">
+        <header
+          class="
+            d-flex
+            justify-content-between
+            align-items-center
+            hamburger-body
+            position-relative
+          "
+        >
+          <h1>
+            <img src="./img/logo_w(null).svg" alt="六角西餐廳" />
+          </h1>
+          <a href="#" class="ham-icon text-white position-absolute">
+            <span class="material-icons-outlined"> menu </span>
+          </a>
+          <ul class="d-flex dropdown-sm-none">
+            <li>
+              <a href="#" class="text-white ham-nav">特色</a>
+            </li>
+            <li>
+              <a href="#" class="text-white ham-nav">主廚</a>
+            </li>
+            <li>
+              <a href="#" class="text-white ham-nav">地圖</a>
+            </li>
+          </ul>
+          <ul class="dropdown-md-block">
+            <li>
+              <a href="#" class="text-white">特色</a>
+            </li>
+            <li>
+              <a href="#" class="text-white">主廚</a>
+            </li>
+            <li>
+              <a href="#" class="text-white">地圖</a>
+            </li>
+          </ul>
+        </header>
+        <section class="banner-body position-absolute banner-body-position">
+          <h2 class="text-size-36 text-center eat-hamburger">
+            咬一口就無法忘懷的漢堡
+          </h2>
+          <p class="text-center">
+            七夕絕對無法錯過的好滋味 <br />
+            <span class="material-icons-outlined"> restaurant </span
+            >六角大漢堡<span class="material-icons-outlined"> restaurant </span>
+          </p>
+        </section>
+      </div>
+      <main class="login-body">
+        <h2 class="login-title text-size-48 text-center fw-bold">六角西餐廳</h2>
+        <p class="text-size-20 text-center fw-bold">享受美食好味道</p>
+        <form action="" class="login-form">
+          <h3 class="login-heading text-size-18 fw-bold text-center">LOGIN</h3>
+          <div>
+            <label for="email" class="login-text">Email Address*</label>
+            <div class="d-flex align-items-center position-relative">
+              <span class="login-icon position-absolute material-icons-outlined"> email </span>
+              <input type="email" name="email" id="email" class="login-input"/>
+            </div>
+          </div>
+          <div>
+            <label for="password" class="login-text">Password*</label>
+            <div class="d-flex align-items-center position-relative">
+              <span class="login-icon position-absolute material-icons-outlined"> lock </span>
+              <input type="password" name="password" id="password" class="login-input"/>
+            </div>
+          </div>
+          <p class="login-forgetpw text-size-14">忘記密碼？</p>
+          <a href="#" class="btn-register text-white text-size-14">註冊</a>
+          <a href="#" class="btn-login text-white text-size-14">登入</a>
+        </form>
+      </main>
+      <footer class="footer-bg d-flex justify-content-between flex-sm-column">
+        <div class="d-flex flex-sm-column">
+          <div>
+            <h2 class="text-size-24 footer-title">關於 六角西餐廳</h2>
+            <p class="footer-text lh-base">
+              Curabitur lobortis id lorem id bibndum. Ut id consectetur magna.
+              Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at.
+            </p>
+          </div>
+          <div class="footer-contact">
+            <h2 class="text-size-24 footer-title">聯絡方式</h2>
+            <ul class="lh-base">
+              <li>• 高雄市中正五路到底</li>
+              <li>• +886 886 886</li>
+              <li>• service@hexschool.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex flex-column justify-content-between">
+          <div class="footer-logo">
+            <img src="./img/logo_l(null).svg" alt="logo" />
+          </div>
+          <ul class="d-flex justify-content-end">
+            <li>
+              <a href="#"
+                ><img
+                  src="https://i.imgur.com/0y6hmb5.png"
+                  class="footer-google"
+                  alt="g+"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://i.imgur.com/gRGWueG.png"
+                  class="footer-twitter"
+                  alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://i.imgur.com/2u5AwGS.png"
+                  class="footer-fb"
+                  alt="fb"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="all.js"></script>
+  </body>
+</html>

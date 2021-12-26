@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./node_modules/purecss/build/base-min.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/purecss/build/buttons-min.css"
+    />
+    <link rel="stylesheet" href="all.css" />
+    <title>Restaurant Cart</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="hamburger-bg text-white position-relative">
+        <header
+          class="
+            d-flex
+            justify-content-between
+            align-items-center
+            hamburger-body
+            position-relative
+          "
+        >
+          <h1>
+            <img src="./img/logo_w(null).svg" alt="六角西餐廳" />
+          </h1>
+          <a href="#" class="ham-icon text-white position-absolute">
+            <span class="material-icons-outlined"> menu </span>
+          </a>
+          <ul class="d-flex dropdown-sm-none">
+            <li>
+              <a href="#" class="text-white ham-nav">特色</a>
+            </li>
+            <li>
+              <a href="#" class="text-white ham-nav">主廚</a>
+            </li>
+            <li>
+              <a href="#" class="text-white ham-nav">地圖</a>
+            </li>
+          </ul>
+          <ul class="dropdown-md-block">
+            <li>
+              <a href="#" class="text-white">特色</a>
+            </li>
+            <li>
+              <a href="#" class="text-white">主廚</a>
+            </li>
+            <li>
+              <a href="#" class="text-white">地圖</a>
+            </li>
+          </ul>
+        </header>
+        <section class="banner-body position-absolute banner-body-position">
+          <h2 class="text-size-36 text-center eat-hamburger">
+            咬一口就無法忘懷的漢堡
+          </h2>
+          <p class="text-center">
+            七夕絕對無法錯過的好滋味 <br />
+            <span class="material-icons-outlined"> restaurant </span
+            >六角大漢堡<span class="material-icons-outlined"> restaurant </span>
+          </p>
+        </section>
+      </div>
+      <main class="cart-bg d-flex">
+        <div class="cart-order">
+          <div class="d-flex align-items-center">
+            <div>
+              <img
+                src="https://i.imgur.com/5PNHiO8.png"
+                class="cart-leaf"
+                alt="線上訂購美食"
+              />
+            </div>
+            <h3 class="text-size-20">線上訂購美食</h3>
+          </div>
+          <ul class="cart-sort">
+            <li>
+              <a href="#" class="cart-sort-food">全部 (23)</a>
+            </li>
+            <li>
+              <a href="#" class="cart-sort-food">只愛吃薯條 (18)</a>
+            </li>
+            <li>
+              <a href="#" class="cart-sort-food">加熱就可食 (1)</a>
+            </li>
+            <li>
+              <a href="#" class="cart-sort-food">不敗漢堡系列 (4)</a>
+            </li>
+          </ul>
+        </div>
+        <div class="cart-list">
+          <!-- 手機 -->
+          <div class="cart-order-cellphone">
+            <div class="d-flex align-items-center">
+              <div>
+                <img
+                  src="https://i.imgur.com/5PNHiO8.png"
+                  class="cart-leaf"
+                  alt="線上訂購美食"
+                />
+              </div>
+              <h3 class="text-size-20">線上訂購美食</h3>
+            </div>
+            <ul class="cart-sort">
+              <li>
+                <a href="#" class="cart-sort-food">全部 (23)</a>
+              </li>
+              <li>
+                <a href="#" class="cart-sort-food">只愛吃薯條 (18)</a>
+              </li>
+              <li>
+                <a href="#" class="cart-sort-food">加熱就可食 (1)</a>
+              </li>
+              <li>
+                <a href="#" class="cart-sort-food">不敗漢堡系列 (4)</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex flex-sm-column cart-sm-input">
+            <div class="d-flex align-items-center">
+              <input type="text" class="cart-input" />
+              <span class="cart-search material-icons-outlined vvv">
+                search
+              </span>
+            </div>
+            <div
+              class="d-flex align-items-center cart-checkout position-relative"
+            >
+              <h4>結帳去<span class="cart-checkout-line">|</span></h4>
+              <span class="cart-checkout-go material-icons-outlined">
+                shopping_cart
+              </span>
+              <span
+                class="
+                  cart-checkout-num
+                  position-absolute
+                  text-white text-center
+                "
+                >1</span
+              >
+            </div>
+          </div>
+          <div class="cart-items">
+            <ul class="d-flex flex-wrap flex-sm-column">
+              <li class="cart-shopping-items position-relative">
+                <div class="cart-hotsale position-absolute">
+                  <div class="cart-ribbon position-absolute text-white">
+                    熱銷美食
+                  </div>
+                </div>
+                <a href="#" class="cart-like position-absolute text-white">
+                  <!-- <span class="material-icons-outlined"> favorite_border </span> -->
+                  <i class="fa fa-heart-o" data-checked=""></i>
+                </a>
+                <a href="#">
+                  <div class="cart-img position-relative">
+                    <img src="https://i.ibb.co/RcZZRtB/product-1.png" />
+                  </div>
+                  <div class="cart-body">
+                    <h2 class="text-center text-size-20">經典漢堡特餐</h2>
+                    <h3 class="text-center text-size-14">
+                      Classic Hamburger Package
+                    </h3>
+                    <span class="cart-price text-center text-size-20">120</span>
+                    <p
+                      class="
+                        cart-plus
+                        d-flex
+                        align-items-center
+                        justify-content-center
+                      "
+                    >
+                      <span class="material-icons-outlined">
+                        shopping_cart
+                      </span>
+                      加入購物車
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="cart-shopping-items position-relative">
+                <a href="#" class="cart-like position-absolute text-white">
+                  <!-- <span class="material-icons-outlined"> favorite_border </span> -->
+                  <i class="fa fa-heart-o" data-checked=""></i>
+                </a>
+                <a href="#">
+                  <div class="cart-img position-relative">
+                    <img src="https://i.imgur.com/E1ZXWxo.png" />
+                  </div>
+                  <div class="cart-body">
+                    <h2 class="text-center text-size-20">英俊香腸</h2>
+                    <h3 class="text-center text-size-14">Handsome Sausage</h3>
+                    <span class="cart-price text-center text-size-20"
+                      >1,024
+                    </span>
+                    <p
+                      class="
+                        cart-plus
+                        d-flex
+                        align-items-center
+                        justify-content-center
+                      "
+                    >
+                      <span class="material-icons-outlined">
+                        shopping_cart
+                      </span>
+                      加入購物車
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="cart-shopping-items position-relative">
+                <a href="#" class="cart-like position-absolute text-white">
+                  <!-- <span class="material-icons-outlined"> favorite_border </span> -->
+                  <i class="fa fa-heart-o" data-checked=""></i>
+                </a>
+                <a href="#">
+                  <div class="cart-img position-relative">
+                    <img src="https://i.imgur.com/DVqWnuD.png" />
+                  </div>
+                  <div class="cart-body">
+                    <h2 class="text-center text-size-20">漢堡兄弟</h2>
+                    <h3 class="text-center text-size-14">Hamburg Brothers</h3>
+                    <span class="cart-price text-center text-size-20"
+                      >792
+                    </span>
+                    <p
+                      class="
+                        cart-plus
+                        d-flex
+                        align-items-center
+                        justify-content-center
+                      "
+                    >
+                      <span class="material-icons-outlined">
+                        shopping_cart
+                      </span>
+                      加入購物車
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="cart-shopping-items position-relative">
+                <a href="#" class="cart-like position-absolute text-white">
+                  <!-- <span class="material-icons-outlined"> favorite_border </span> -->
+                  <i class="fa fa-heart-o" data-checked=""></i>
+                </a>
+                <a href="#">
+                  <div class="cart-img position-relative">
+                    <img src="https://i.imgur.com/6rv3wBc.png" />
+                  </div>
+                  <div class="cart-body">
+                    <h2 class="text-center text-size-20">完美願望</h2>
+                    <h3 class="text-center text-size-14">
+                      Dragon Ball Package
+                    </h3>
+                    <span class="cart-price text-center text-size-20"
+                      >999,999</span
+                    >
+                    <p
+                      class="
+                        cart-plus
+                        d-flex
+                        align-items-center
+                        justify-content-center
+                      "
+                    >
+                      <span class="material-icons-outlined">
+                        shopping_cart
+                      </span>
+                      加入購物車
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      <footer class="footer-bg d-flex justify-content-between flex-sm-column">
+        <div class="d-flex flex-sm-column">
+          <div>
+            <h2 class="text-size-24 footer-title">關於 六角西餐廳</h2>
+            <p class="footer-text lh-base">
+              Curabitur lobortis id lorem id bibndum. Ut id consectetur magna.
+              Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at.
+            </p>
+          </div>
+          <div class="footer-contact">
+            <h2 class="text-size-24 footer-title">聯絡方式</h2>
+            <ul class="lh-base">
+              <li>• 高雄市中正五路到底</li>
+              <li>• +886 886 886</li>
+              <li>• service@hexschool.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex flex-column justify-content-between">
+          <div class="footer-logo">
+            <img src="./img/logo_l(null).svg" alt="logo" />
+          </div>
+          <ul class="d-flex justify-content-end">
+            <li>
+              <a href="#"
+                ><img
+                  src="https://i.imgur.com/0y6hmb5.png"
+                  class="footer-google"
+                  alt="g+"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://i.imgur.com/gRGWueG.png"
+                  class="footer-twitter"
+                  alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://i.imgur.com/2u5AwGS.png"
+                  class="footer-fb"
+                  alt="fb"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="all.js"></script>
+  </body>
+</html>
