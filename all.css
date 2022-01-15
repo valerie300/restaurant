@@ -146,12 +146,12 @@ img {
   max-width: 1024px;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) and (min-width: 376px) {
   .wrap {
     max-width: 768px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 375px) and (min-width: 321px) {
   .wrap {
     max-width: 375px;
   }
@@ -216,7 +216,7 @@ img {
 .flex-wrap {
   flex-wrap: wrap;
 }
-@media (max-width: 375px) {
+@media (max-width: 375px) and (min-width: 321px) {
   .flex-sm-column {
     flex-direction: column;
   }
@@ -224,6 +224,15 @@ img {
 /* common end */
 /* index start */
 /* header & banner start */
+.restaurant-logo {
+  display: block;
+  background: url(https://i.imgur.com/H0mwfc2.png) no-repeat;
+  width: 170px;
+  height: 36px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
 .ham-icon {
   display: none;
   right: 22px;
@@ -239,7 +248,6 @@ img {
 }
 .hamburger-bg {
   height: 420px;
-  width: 1024px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -252,7 +260,6 @@ img {
 }
 .banner-body {
   height: 152px;
-  width: 460px;
   background-color: rgba(0, 0, 0, 0.35);
 }
 .banner-body-position {
@@ -261,22 +268,17 @@ img {
   transform: translateY(-50%);
 }
 .eat-hamburger {
-  margin: 20px 0;
+  padding: 20px 42px 16px 22px;
 }
-@media (max-width: 768px) {
-  .hamburger-bg {
-    width: 768px;
-  }
+@media (max-width: 767px) and (min-width: 376px) {
   .hamburger-body {
     padding: 0 30px 0 13px;
   }
   .banner-body-position {
-    top: 50%;
-    left: 20%;
-    transform: translateY(-50%);
+    left: 5%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 375px) and (min-width: 321px) {
   .ham-icon {
     display: block;
     right: 22px;
@@ -309,17 +311,15 @@ img {
     padding: 16px 0;
   }
   .hamburger-bg {
-    width: 375px;
     background-image: url("https://i.imgur.com/4Tk5HHJ.png");
   }
   .banner-body {
     height: 194px;
-    width: 300px;
   }
   .banner-body-position {
     top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 /* header & banner end */
@@ -337,6 +337,14 @@ img {
 .footer-contact {
   margin-left: 21px;
 }
+.footer-contact ul {
+  margin-left: 21px;
+  list-style-type: disc;
+}
+.footer-tel,
+.footer-mail {
+  color: #3d1101;
+}
 .footer-google,
 .footer-twitter,
 .footer-fb {
@@ -345,12 +353,12 @@ img {
   border-radius: 5px;
   margin-left: 11px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) and (min-width: 376px) {
   .footer-bg {
     padding: 50px 11px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 375px) and (min-width: 321px) {
   .footer-contact {
     margin: 30px 0 0 0;
   }
@@ -387,7 +395,7 @@ img {
   max-width: 260px;
   margin-top: 11px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) and (min-width: 376px) {
   .feature-bg {
     padding: 50px 30px;
   }
@@ -395,7 +403,7 @@ img {
     max-width: 196px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 375px) and (min-width: 321px) {
   svg {
     display: none;
   }
@@ -417,12 +425,11 @@ img {
   max-width: 410px;
   margin-top: 16px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) and (min-width: 376px) {
   .chef-bg {
     padding: 0 20px 0 10px;
   }
   .chef-body {
-    width: 373px;
     height: 460px;
   }
   .chef-img {
@@ -434,13 +441,10 @@ img {
     max-width: 330px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 375px) and (min-width: 321px) {
   .chef-bg {
     padding: 0;
     margin: 0;
-  }
-  .chef-body {
-    width: 373px;
   }
   .chef-content {
     margin-left: 0;
@@ -471,8 +475,9 @@ img {
 }
 .message-text {
   max-width: 220px;
+  margin-bottom: 15px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) and (min-width: 376px) {
   .message-bg {
     padding: 50px 12px;
   }
@@ -480,7 +485,7 @@ img {
     max-width: 155px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 375px) and (min-width: 321px) {
   .message-text {
     max-width: 220px;
   }
@@ -503,13 +508,13 @@ img {
 }
 .booking-input {
   display: inline-block;
-  width: 460px;
   height: 32px;
   line-height: 32px;
   box-sizing: border-box;
   margin-bottom: 17px;
 }
 .booking-vegetarian {
+  display: block;
   margin-bottom: 8px;
 }
 .booking-vegetarian-no {
@@ -527,11 +532,17 @@ img {
 .booking-cancel {
   background-color: #00000054;
 }
+.booking-cancel:hover {
+  background-color: rgb(71, 71, 71);
+}
 .booking-send {
   margin-left: 11px;
   background-color: #f56c23;
 }
-@media (max-width: 768px) {
+.booking-send:hover {
+  background-color: #ce5c1f;
+}
+@media (max-width: 767px) and (min-width: 376px) {
   .booking-bg {
     padding: 50px 10px;
   }
@@ -544,18 +555,12 @@ img {
     height: 100%;
     object-fit: cover;
   }
-  .booking-input {
-    width: 363px;
-  }
 }
-@media (max-width: 375px) {
+@media (max-width: 375px) and (min-width: 321px) {
   .booking-body {
     width: 298px;
     height: 386px;
     margin: 0 auto 30px;
-  }
-  .booking-input {
-    width: 300px;
   }
 }
 /*我們的位置不太夠坐 end */
@@ -589,7 +594,7 @@ img {
   color: #fff;
   background-color: #3d1101;
 }
-@media (max-width: 375px) {
+@media (max-width: 375px) and (min-width: 321px) {
   .cart-bg {
     padding: 0;
   }
@@ -632,7 +637,7 @@ img {
   left: 90%;
   top: -3%;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) and (min-width: 376px) {
   .cart-input {
     width: 360px;
   }
@@ -640,12 +645,12 @@ img {
     margin-left: 20px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 375px) and (min-width: 321px) {
   .cart-list {
     margin: 0 auto;
   }
   .cart-input {
-    width: 300px;
+    width: 250px;
   }
   .cart-checkout {
     margin: 15px 0 0 auto;
@@ -763,12 +768,12 @@ img {
   color: #fff;
   background-color: #ff5e45;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) and (min-width: 376px) {
   .cart-shopping-items {
     margin: 30px 20px 0 0;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 375px) and (min-width: 321px) {
   .cart-shopping-items {
     width: 300px;
     margin: 10px auto 0;
@@ -781,7 +786,8 @@ img {
 /* 菜單 end */
 /* cart end */
 /* login start */
-.login-body {
+.login-body,
+.enter-body {
   padding: 50px 0;
   background-color: rgb(240, 228, 223);
 }
@@ -809,10 +815,12 @@ img {
 .login-input {
   width: 270px;
   height: 32px;
+  padding-left: 30px;
   box-sizing: border-box;
   margin: 0 auto;
 }
 .login-forgetpw {
+  display: block;
   margin: 3px 0 30px 15px;
   color: #f56c23;
 }
@@ -824,56 +832,66 @@ img {
   border-radius: 3px;
 }
 .btn-register {
-  margin:0 20px 0 15px;
+  margin: 0 20px 0 15px;
   background: rgba(0, 0, 0, 0.35);
+}
+.btn-register:hover {
+  background-color: rgb(71, 71, 71);
 }
 .btn-login {
   background: #f56c23;
 }
+.btn-login:hover {
+  background-color: #ce5c1f;
+}
 /* login end */
 /* register start */
-.login-form-register{
+.login-form-register {
   width: 620px;
   margin: 35px auto 0;
   box-shadow: 2px 2px 6px rgb(185, 185, 185);
 }
-.register-text{
+.register-text {
   width: 285px;
   line-height: 1.2;
 }
-.register-text{
+.register-text {
   display: block;
   margin: 0 0 3px 15px;
 }
-.register-text-password{
+.register-text-password {
   margin-top: 15px;
 }
-.register-input-password{
+.register-input-password {
   margin-top: 12px;
 }
-.register-icon{
+.register-icon {
   left: 20px;
   top: 50%;
   transform: translateY(-50%);
 }
-.register-input{
+.register-input {
   width: 270px;
   height: 32px;
+  padding-left: 30px;
   box-sizing: border-box;
   margin: 0 auto;
 }
-.register-btn{
+.register-btn {
   padding: 10px 47px;
   display: inline-block;
   margin: 0 0 15px 163px;
   border-radius: 3px;
   background: #f56c23;
 }
-@media (max-width: 375px) {
-  .login-form-register{
+.register-btn:hover {
+  background-color: #ce5c1f;
+}
+@media (max-width: 375px) and (min-width: 321px) {
+  .login-form-register {
     width: 300px;
   }
-  .register-text{
+  .register-text {
     margin: 0 0 15px 15px;
   }
 }

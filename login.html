@@ -2,14 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- IE兼容 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <meta name="description" content="六角西餐廳，無敵好吃的漢堡" />
+    <meta name="keywords" content="漢堡,美式餐廳,六" />
+    <!-- Facebook OG:Tag -->
+    <meta property="og:title" content="六角西餐廳" />
+    <meta property="og:description" content="無敵漢堡快來買" />
+    <meta property="og:url" content="FB上的網址" />
+    <meta property="og:image" content="FB的圖片" />
+    <!-- Twitter Card data -->
+    <meta name="twitter:title" content="六角西餐廳" />
+    <meta name="twitter:description" content="無敵漢堡快來買" />
+    <meta name="twitter:url" content="Twitter上的網址" />
+    <meta name="twitter:image" content="Twitter的圖片" />
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Material icons -->
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet"
@@ -18,11 +29,6 @@
       href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./node_modules/purecss/build/base-min.css" />
-    <link
-      rel="stylesheet"
-      href="./node_modules/purecss/build/buttons-min.css"
-    />
     <link rel="stylesheet" href="all.css" />
     <title>Restaurant Cart</title>
   </head>
@@ -30,40 +36,36 @@
     <div class="wrap">
       <div class="hamburger-bg text-white position-relative">
         <header
-          class="
-            d-flex
-            justify-content-between
-            align-items-center
-            hamburger-body
-            position-relative
-          "
+          class="d-flex justify-content-between align-items-center hamburger-body position-relative"
         >
-          <h1>
-            <img src="./img/logo_w(null).svg" alt="六角西餐廳" />
+          <!-- logo 使用標題標籤建議在標籤內加上文字內容（搭配圖片取代文字），有助於搜尋引擎優化(SEO) -->
+          <h1 class="restaurant-logo">
+            <a href="#">六角西餐廳</a>
+            <!-- <img src="./img/logo_w(null).svg" alt="六角西餐廳" /> -->
           </h1>
           <a href="#" class="ham-icon text-white position-absolute">
             <span class="material-icons-outlined"> menu </span>
           </a>
           <ul class="d-flex dropdown-sm-none">
             <li>
-              <a href="#" class="text-white ham-nav">特色</a>
+              <a href="login.html" class="text-white ham-nav">特色</a>
             </li>
             <li>
-              <a href="#" class="text-white ham-nav">主廚</a>
+              <a href="register.html" class="text-white ham-nav">主廚</a>
             </li>
             <li>
-              <a href="#" class="text-white ham-nav">地圖</a>
+              <a href="cart.html" class="text-white ham-nav">地圖</a>
             </li>
           </ul>
           <ul class="dropdown-md-block">
             <li>
-              <a href="#" class="text-white">特色</a>
+              <a href="login.html" class="text-white">特色</a>
             </li>
             <li>
-              <a href="#" class="text-white">主廚</a>
+              <a href="register.html" class="text-white">主廚</a>
             </li>
             <li>
-              <a href="#" class="text-white">地圖</a>
+              <a href="cart.html" class="text-white">地圖</a>
             </li>
           </ul>
         </header>
@@ -78,7 +80,7 @@
           </p>
         </section>
       </div>
-      <main class="login-body">
+      <main class="enter-body">
         <h2 class="login-title text-size-48 text-center fw-bold">六角西餐廳</h2>
         <p class="text-size-20 text-center fw-bold">享受美食好味道</p>
         <form action="" class="login-form">
@@ -86,19 +88,38 @@
           <div>
             <label for="email" class="login-text">Email Address*</label>
             <div class="d-flex align-items-center position-relative">
-              <span class="login-icon position-absolute material-icons-outlined"> email </span>
-              <input type="email" name="email" id="email" class="login-input"/>
+              <span
+                class="login-icon position-absolute material-icons-outlined"
+              >
+                email
+              </span>
+              <input type="email" name="email" id="email" class="login-input" />
             </div>
           </div>
           <div>
             <label for="password" class="login-text">Password*</label>
             <div class="d-flex align-items-center position-relative">
-              <span class="login-icon position-absolute material-icons-outlined"> lock </span>
-              <input type="password" name="password" id="password" class="login-input"/>
+              <span
+                class="login-icon position-absolute material-icons-outlined"
+              >
+                lock
+              </span>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="login-input"
+              />
             </div>
           </div>
-          <p class="login-forgetpw text-size-14">忘記密碼？</p>
-          <a href="#" class="btn-register text-white text-size-14">註冊</a>
+          <p>
+            <a href="register.html" class="login-forgetpw text-size-14"
+              >忘記密碼？</a
+            >
+          </p>
+          <a href="register.html" class="btn-register text-white text-size-14"
+            >註冊</a
+          >
           <a href="#" class="btn-login text-white text-size-14">登入</a>
         </form>
       </main>
@@ -114,15 +135,23 @@
           <div class="footer-contact">
             <h2 class="text-size-24 footer-title">聯絡方式</h2>
             <ul class="lh-base">
-              <li>• 高雄市中正五路到底</li>
-              <li>• +886 886 886</li>
-              <li>• service@hexschool.com</li>
+              <li>高雄市中正五路到底</li>
+              <li>
+                <a href="tel:+886 886 886" class="footer-tel">+886 886 886</a>
+              </li>
+              <li>
+                <a href="mailto:service@hexschool.com" class="footer-mail"
+                  >service@hexschool.com</a
+                >
+              </li>
             </ul>
           </div>
         </div>
         <div class="d-flex flex-column justify-content-between">
           <div class="footer-logo">
-            <img src="./img/logo_l(null).svg" alt="logo" />
+            <a href="index.html">
+              <img src="./img/logo_l(null).svg" alt="logo"
+            /></a>
           </div>
           <ul class="d-flex justify-content-end">
             <li>

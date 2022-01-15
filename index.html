@@ -2,10 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- IE兼容 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="六角西餐廳，無敵好吃的漢堡" />
+    <meta name="keywords" content="漢堡,美式餐廳,六" />
+    <!-- Facebook OG:Tag -->
+    <meta property="og:title" content="六角西餐廳" />
+    <meta property="og:description" content="無敵漢堡快來買" />
+    <meta property="og:url" content="FB上的網址" />
+    <meta property="og:image" content="FB的圖片" />
+    <!-- Twitter Card data -->
+    <meta name="twitter:title" content="六角西餐廳" />
+    <meta name="twitter:description" content="無敵漢堡快來買" />
+    <meta name="twitter:url" content="Twitter上的網址" />
+    <meta name="twitter:image" content="Twitter的圖片" />
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Material icons -->
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet"
@@ -14,11 +29,6 @@
       href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./node_modules/purecss/build/base-min.css" />
-    <link
-      rel="stylesheet"
-      href="./node_modules/purecss/build/buttons-min.css"
-    />
     <link rel="stylesheet" href="all.css" />
     <title>Restaurant</title>
   </head>
@@ -26,46 +36,36 @@
     <div class="wrap">
       <div class="hamburger-bg text-white position-relative">
         <header
-          class="
-            d-flex
-            justify-content-between
-            align-items-center
-            hamburger-body
-            position-relative
-          "
+          class="d-flex justify-content-between align-items-center hamburger-body position-relative"
         >
-          <h1>
-            <img src="./img/logo_w(null).svg" alt="六角西餐廳" />
+          <!-- logo 使用標題標籤建議在標籤內加上文字內容（搭配圖片取代文字），有助於搜尋引擎優化(SEO) -->
+          <h1 class="restaurant-logo">
+            <a href="#">六角西餐廳</a>
+            <!-- <img src="./img/logo_w(null).svg" alt="六角西餐廳" /> -->
           </h1>
           <a href="#" class="ham-icon text-white position-absolute">
             <span class="material-icons-outlined"> menu </span>
           </a>
           <ul class="d-flex dropdown-sm-none">
             <li>
-              <a href="#" class="text-white ham-nav"
-                >特色</a
-              >
+              <a href="login.html" class="text-white ham-nav">特色</a>
             </li>
             <li>
-              <a href="#" class="text-white ham-nav"
-                >主廚</a
-              >
+              <a href="register.html" class="text-white ham-nav">主廚</a>
             </li>
             <li>
-              <a href="#" class="text-white ham-nav"
-                >地圖</a
-              >
+              <a href="cart.html" class="text-white ham-nav">地圖</a>
             </li>
           </ul>
           <ul class="dropdown-md-block">
             <li>
-              <a href="#" class="text-white">特色</a>
+              <a href="login.html" class="text-white">特色</a>
             </li>
             <li>
-              <a href="#" class="text-white">主廚</a>
+              <a href="register.html" class="text-white">主廚</a>
             </li>
             <li>
-              <a href="#" class="text-white">地圖</a>
+              <a href="cart.html" class="text-white">地圖</a>
             </li>
           </ul>
         </header>
@@ -80,7 +80,7 @@
           </p>
         </section>
       </div>
-      <section class="feature-bg">
+      <section class="feature-bg" id="feature-bg-id">
         <div
           class="feature-body d-flex justify-content-center align-items-center"
         >
@@ -135,7 +135,10 @@
           </li>
         </ul>
       </section>
-      <section class="chef-bg d-flex align-items-center flex-sm-column">
+      <section
+        class="chef-bg d-flex align-items-center flex-sm-column"
+        id="chef-bg-id"
+      >
         <div class="chef-body">
           <img
             src="https://i.imgur.com/uGVTVN4.png"
@@ -164,12 +167,7 @@
       <section class="message-bg">
         <h2 class="message-heading text-center text-size-24">聽聽別人的感想</h2>
         <ul
-          class="
-            d-flex
-            justify-content-between
-            flex-sm-column
-            align-items-center
-          "
+          class="d-flex justify-content-between flex-sm-column align-items-center"
         >
           <li class="d-flex">
             <div>
@@ -184,7 +182,6 @@
               <p class="message-text lh-base">
                 自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
               </p>
-              <br />
               <p class="text-right">-- 產品經理</p>
             </div>
           </li>
@@ -201,7 +198,6 @@
               <p class="message-text lh-base">
                 自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
               </p>
-              <br />
               <p class="text-right">-- 金身道士</p>
             </div>
           </li>
@@ -218,18 +214,17 @@
               <p class="message-text lh-base">
                 自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
               </p>
-              <br />
               <p class="text-right">-- 美麗萬分</p>
             </div>
           </li>
         </ul>
       </section>
-      <section class="booking-bg">
+      <section class="booking-bg" id="map-id">
         <h2 class="text-center text-size-24 lh-base booking-title">
           我們的位置不太夠坐<br />
           要不要先訂位呢？
         </h2>
-        <div class="d-flex flex-sm-column justify-content-between">
+        <div class="d-flex flex-sm-column">
           <div class="booking-body">
             <img
               src="https://i.imgur.com/KtnL1ws.png"
@@ -281,10 +276,11 @@
                 name="number"
                 class="booking-input"
               />
-              <h5 class="booking-vegetarian text-size-14">是否需要素食</h5>
+              <label for="food" class="booking-vegetarian text-size-14">是否需要素食</label>
               <input
                 type="radio"
                 name="food"
+                id="food"
                 value="是"
                 class="text-size-14"
                 checked
@@ -301,20 +297,12 @@
             <div class="text-right">
               <a
                 href="#"
-                class="
-                  text-size-14
-                  booking-cancel
-                  text-white text-center
-                "
+                class="text-size-14 booking-cancel text-white text-center"
                 >取消</a
               >
               <a
                 href="#"
-                class="
-                  text-size-14
-                  booking-send
-                  text-white text-center
-                "
+                class="text-size-14 booking-send text-white text-center"
                 >送出</a
               >
             </div>
@@ -333,15 +321,23 @@
           <div class="footer-contact">
             <h2 class="text-size-24 footer-title">聯絡方式</h2>
             <ul class="lh-base">
-              <li>• 高雄市中正五路到底</li>
-              <li>• +886 886 886</li>
-              <li>• service@hexschool.com</li>
+              <li>高雄市中正五路到底</li>
+              <li>
+                <a href="tel:+886 886 886" class="footer-tel">+886 886 886</a>
+              </li>
+              <li>
+                <a href="mailto:service@hexschool.com" class="footer-mail"
+                  >service@hexschool.com</a
+                >
+              </li>
             </ul>
           </div>
         </div>
         <div class="d-flex flex-column justify-content-between">
           <div class="footer-logo">
-            <img src="./img/logo_l(null).svg" alt="logo" />
+            <a href="index.html">
+              <img src="./img/logo_l(null).svg" alt="logo"
+            /></a>
           </div>
           <ul class="d-flex justify-content-end">
             <li>
